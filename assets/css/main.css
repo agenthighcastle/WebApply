@@ -5,36 +5,31 @@
 */
 html, body{
   font-family: Arial;
-  background-color: #212121;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+  background-color: #fff;
 }
-.content{
+.secondary{
   color: #263238;
   background-color: #F5F5F5;
   border-radius: 25px;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  position: absolute;
   padding: 40px;
   width: 350px;
 }
-.content h1{
+.secondary h1{
   font-size: 40px;
   position: relative;
   font-weight: 300;
   display: inline-block;
 }
-.content h5{
+.secondary h5{
   font-size: 30px;
   position: relative;
   font-weight: 300;
   display: inline-block;
 }
-.content p{
+.secondary p{
   font-size: 17px;
 }
 #pw{
@@ -46,7 +41,7 @@ html, body{
   transition: all 0.2s;
   color: #3949AB;
 }
-.content hr{
+.secondary hr{
   border-top: 1px dashed #8c8b8b;
 }
 .btn{

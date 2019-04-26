@@ -66,19 +66,30 @@ isset($_SESSION["user"]) && isset($_SESSION["password"])){
   </head>
   <body>
     <div class="content">
+	<div class="container" style="text-align:center;padding-top:20px;">
       <h1>Setup</h1>
       <p>Welcome to the setup of WebApply. Thanks that you choose my plugin.
       Before you can start you must be setup the system.</p>
       <h5>Settings</h5>
       <form action="step3.php" method="post">
+	  <div class="row">
+	  <div class="col-md-12">
         <select name="lang">
           <option value="en">English</option>
           <option value="de">German (Deutsch)</option>
         </select>
+		</div>
+		<div class="col-md-12">
         <input type="text" name="servername" placeholder="Servername" required>
+		</div>
+		<div class="col-md-12">
         <input type="text" name="tsip" placeholder="Your Teamspeak IP">
+		</div>
+		<div class="col-md-12">
         <button type="submit" name="submit">Finish</button>
+		</div>
       </form>
     </div>
+	</div>
   </body>
 </html>

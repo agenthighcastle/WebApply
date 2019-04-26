@@ -95,16 +95,28 @@ isset($_SESSION["user"]) && isset($_SESSION["password"])){
   </head>
   <body>
     <div class="content">
+	<div class="container" style="text-align:center;padding-top:20px;">
       <h1>Setup</h1>
       <p>Welcome to the setup of WebApply. Thanks that you choose my plugin.
       Before you can start you must be setup the system.</p>
       <h5>Create Account</h5>
       <form action="step2.php" method="post">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit" name="submit">Continue</button>
+		<div class="row">
+		  <div class="col-md-12">
+			<input type="text" name="username" placeholder="Username" required>
+		  </div>
+		  <div class="col-md-12">
+			<input type="email" name="email" placeholder="Email" required>
+		  </div>
+		  <div class="col-md-12">
+			<input type="password" name="password" placeholder="Password" required>
+		  </div>
+		  <div class="col-md-12" style="padding-top:20px;">
+			<button type="submit" name="submit">Continue</button>
+		  </div>
+		</div>
       </form>
     </div>
+	</div>
   </body>
 </html>

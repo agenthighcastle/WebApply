@@ -12,6 +12,7 @@ session_start();
     <title>Setup</title>
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/toast.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="../assets/js/toast.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -60,6 +61,7 @@ session_start();
     }
      ?>
     <div class="content">
+	<div class="container" style="text-align:center;padding-top:20px;">
       <?php
       require("../datamanager.php");
       $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -108,16 +110,29 @@ if ( function_exists( 'mail' ) )
 else
 {
     echo 'mail() has been disabled';
-}*/
+}*/	
 ?>
       <h5>MySQL Database</h5>
       <form action="index.php" method="post">
-        <input type="text" name="host" value="localhost" required>
-        <input type="text" name="database" placeholder="Database" required>
-        <input type="text" name="user" placeholder="User" required>
-        <input type="password" name="password" placeholder="Password">
-        <button type="submit" name="submit">Continue</button>
+	    <div class="row">
+		  <div class="col-md-12">
+			<input type="text" name="host" value="localhost" required>
+		  </div>
+		  <div class="col-md-12">
+			<input type="text" name="database" placeholder="Database" required>
+		  </div>
+		  <div class="col-md-12">
+			<input type="text" name="user" placeholder="User" required>
+		  </div>
+		  <div class="col-md-12">
+			<input type="password" name="password" placeholder="Password">
+		  </div>
+		  <div class="col-md-12" style="padding-top:20px;">
+			<button type="submit" name="submit">Continue</button>
+		  </div>
+		</div>
       </form>
     </div>
+	</div>
   </body>
 </html>
