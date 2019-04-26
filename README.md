@@ -1,5 +1,5 @@
 # WebApply
-A applysystem for minecraft servers based on web.
+A simple Apply-System for Servers.
 
 WebApply is an free webbased system for applications. The system is multi language and supports also german.
 You can also help to translate WebApply in your language!
