@@ -4,7 +4,7 @@
 //////////////////////////////////////////
 define("INDEX_HEADLINE", "Apply");
 define("INDEX_DESC", "Welcome! <br><br>
-  On this page you can apply for a position in our staff.<br>
+  On this page you can apply for a position in our team.<br>
   Below you can see which ranks are currently open for application.<br><br>
   Good luck with your application <br>
   ~ ".getSetting("name"));
