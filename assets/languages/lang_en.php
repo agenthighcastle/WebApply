@@ -120,9 +120,9 @@ define("INTERVIEW_BUTTON", "Set Interview");
 //////////////////////////////////////////
 define("APPLY", "Apply");
 define("DISABLED_TITLE", "Applications disabled");
-define("SUP_DISABLED", "Sorry, we are currently not looking for new Supporters.");
-define("DEV_DISABLED", "Sorry, we are currently not looking for new Developers.");
-define("BUILD_DISABLED", "Sorry, we are currently not looking for new Builders.");
+define("SUP_DISABLED", "Sorry, we are currently not looking for Supporters.");
+define("DEV_DISABLED", "Sorry, we are currently not looking for Developers.");
+define("BUILD_DISABLED", "Sorry, we are currently not looking for Builders.");
 define("FORM_USER", "Username");
 define("FORM_PW", "Password");
 define("FORM_AGE", "Age");
